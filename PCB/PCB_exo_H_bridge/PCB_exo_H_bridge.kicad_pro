@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.15
         }
       },
       "diff_pair_dimensions": [
@@ -116,7 +116,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0762,
+        "min_clearance": 0.1,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
         "min_hole_clearance": 0.25,
@@ -178,7 +178,9 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.09,
+        0.3
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -210,6 +212,14 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.25,
+          "drill": 0.15
+        },
+        {
+          "diameter": 0.45,
+          "drill": 0.3
         }
       ],
       "zones_allow_external_fillets": false
@@ -440,8 +450,12 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_footprint_libs": [
+      "Maker_librairy"
+    ],
+    "pinned_symbol_libs": [
+      "Maker_librairy"
+    ]
   },
   "meta": {
     "filename": "PCB_exo_H_bridge.kicad_pro",
@@ -595,6 +609,14 @@
     [
       "256b0b23-f70b-4640-a6b1-ef965fde36a8",
       "STM32G4A1REI6_ref_design"
+    ],
+    [
+      "b4ad62f7-40b7-4079-a615-e8347b816bb6",
+      "IC4606-2_FDMQ86530L_Motor_driver"
+    ],
+    [
+      "2a21ce8e-21e7-4ad9-bc84-92b1b286bf72",
+      "PSU_171013801"
     ]
   ],
   "text_variables": {}
